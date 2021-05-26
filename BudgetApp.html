@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+
+<head>
+    <title>BudgetApp</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>'Budget App'</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">BudgetApp</div>
+            <div id="total__title">Всего</div>
+            <div id="total">0</div>
+            <ul class="header__list">
+                <li id='income__header'>
+                    <div class="income__title">Доходы</div>
+                    <div id="income__money">0</div>
+                </li>
+                <li><canvas id='circle'>circle</canvas></li>
+                <li id='outcome__header'>
+                    <div class="outcome__title">Расходы</div>
+                    <div id="outcome__money">0</div>
+                </li>
+            </ul>
+        </div>
+        <div class="dashboard">
+            <div class="dashboard__title">Записи</div>
+            <ul class="tab__list">
+                <li id='expences' class='active'>Расходы</li>
+                <li id='income'>Доходы</li>
+                <li id='all'>Все</li>
+            </ul>
+            <ul id='list__expences' class="dashboard__list active">
+                <li class="dashboard__list__item">
+
+                </li>
+            </ul>
+            <ul id='list__income' class="dashboard__list">
+                <li class="dashboard__list__item">
+
+                </li>
+            </ul>
+            <ul id='list__all' class="dashboard__list">
+                <li class="dashboard__list__item">
+
+                </li>
+            </ul>
+            <div id="dashboard__end">
+                <input type="text" id="input__title" placeholder="Расход">
+                <input type="text" id="input__money" placeholder="0 руб.">
+                <input type="submit" id="add__btn" value='+'>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
